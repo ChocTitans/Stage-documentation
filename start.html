@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class=""></span>
+                            <span class="text-highlight">OpenLab</span>
+                        </a>
+                    </h1>
+                    
+                </div><!--//branding-->
+                
+
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Documentation</h1>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="dll-php-composer" class="doc-section">
+                                <h2 class="section-title">Téléchargement</h2>
+                                <div class="section-block">
+                                    <p>- Premierement vous devez installer PHP, vous pouvez choisir soit XAMPP ou WAMP</p>
+                                    <p>- Installer Composer, Vous devez avoir PHP sur votre machine pour pouvoir procéder a l'installation de composer </p>
+
+                                    <a href="https://www.apachefriends.org/fr/index.html" class="btn btn-blue" target="_blank"><i class="fas fa-download"></i> Télécharger XAMPP</a>
+                                    <a href="https://getcomposer.org/download/" class="btn btn-blue" target="_blank"><i class="fas fa-download"></i> Télécharger Composer</a>
+
+
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Création de votre projet Laravel</h2>
+                                <div id="step1"  class="section-block">
+                                    <h3 class="block-title">Step One</h3>
+                                    <p>Après avoir télécharger et installer PHP et Composer, vous pouvez maintenant créer votre projet laravel avec la commande :
+                                    </p>
+                                    <div class="code-block">
+                                        <p><code>composer create-project laravel/laravel &lt;NomdevotreProjet&gt;</code></p>
+                                        <p> Accédez a votre projet avec : </p>
+                                        <p><code>cd &lt;NomdevotreProjet&gt;</code></p>
+                                        <p> Puis démarrez votre serveur :</p>
+                                        <p><code>php artisan serve</code></p>
+                                    </div><!--//code-block-->
+
+                                    <p>Une fois que vous avez démarré le serveur, votre application sera accessible dans votre navigateur Web à l'adresse <a href="http://localhost:8000"> Localhost</a>
+                                    </p> 	
+                                </div><!--//section-block-->
+
+                            </section><!--//doc-section-->
+                            
+                            <section id="code-section" class="doc-section">
+                                <h2 class="section-title">Docker</h2>
+                                <div class="section-block">
+                                    
+                                </div><!--//section-block-->
+                                <div id="docker" class="section-block">
+                                
+                                    <p>
+                                    - Docker est une plate-forme ouverte pour le développement, la livraison et l'exécution d'applications. Docker vous permet de séparer vos applications de votre infrastructure afin que vous puissiez livrer rapidement des logiciels. Avec Docker, vous pouvez gérer votre infrastructure de la même manière que vous gérez vos applications. En tirant parti des méthodologies de Docker pour expédier, tester et déployer rapidement le code, vous pouvez réduire considérablement le délai entre l'écriture du code et son exécution en production.
+                                    </p>
+                                    <div class="callout-block callout-info">
+                                        <div class="icon-holder">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div><!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">Informations:</h4>
+                                            <p>Documentation sur Docker : <a href="https://docs.docker.com/get-started/" target="_blank">Plus d'informations</a> </p>
+                                        </div><!--//content-->
+                                    </div>
+                                </div><!--//section-block-->
+
+                                <div id="docker-dll" class="section-block">
+                                    <div class="code-block">
+                                        <h6>Téléchargement</h6>
+                                        <p>- Télécharger et installer Docker-Desktop. </p>
+                                        <a href="https://www.docker.com/products/docker-desktop/" class="btn btn-blue" target="_blank"><i class="fas fa-download"></i> Télécharger Docker-Desktop</a>      
+                                    </div><!--//code-block-->
+                                                                        
+
+                                    <p>- Maintenant que vous avez PHP et Composer et Docker installé sur votre machine, on peut procéder a créer les images de PHP, Nginx et PostgreSQL sur docker.
+                                        Créez un fichier nommé docker-compose.yml dans le dossier de votre projet Laravel. </p> 
+                                    <div class="callout-block callout-success">
+                                        <div class="icon-holder">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div><!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">Informations:</h4>
+                                            <p>Documentation sur Nginx : <a href="https://www.nginx.com/resources/wiki/" target="_blank">Plus d'informations</a> </p>
+                                        </div><!--//content-->
+                                    </div>
+
+                                    <p> - Ce fichier contiendra toute la configuration des conteneurs à construire dans la configuration de notre application, de la façon dont les conteneurs doivent être construits aux réseaux et volumes accessibles aux conteneurs.</p>
+                                    </p> 
+
+
+                                    <p>Dans docker-compose.yml, On va ajouter 3 services, On va commencer par Nginx, Php et PostgreSQL</p>
+                                </div><!--//section-block-->
+                                <div id="docker-compose" class="section-block">
+                                    <div class="code-block">
+                                        <h6>Docker-compose.yml</h6>
+                                        <pre><code class="language-php">
+    version: '3.9'
+    networks:
+    webapp:
+
+    services:
+        nginx:
+            image: nginx:stable-alpine
+            container_name: ${APP_NAME}_nginx
+            ports:
+            - "8000:80"
+            links:
+            - php
+            volumes:
+            - ./:/var/www/html
+            - ./nginx/nginx.conf:/etc/nginx/conf.d:rw
+            depends_on:
+            - php
+            - postgres
+            networks:
+            - webapp
+        php:
+            build:
+                context: .
+                dockerfile: Dockerfile
+            container_name: ${APP_NAME}_php
+            volumes:
+            - ./:/var/www/html
+            ports:
+            - "9001:9000"
+            networks:
+            - webapp
+
+        postgres:
+            image: postgres:8
+            container_name: ${APP_NAME}_postgres
+            restart: on-failure
+            ports:
+            - "5433:5432"
+            volumes:
+                - ./postgres_data:/var/lib/postgresql
+            environment:
+                POSTGRES_USER: ${DB_USERNAME}
+                POSTGRES_PASSWORD: ${DB_PASSWORD}
+                POSTGRES_DB: ${DB_DATABASE}
+            networks:
+            - webapp
+
+  
+                                        </code></pre>
+
+                                        <p> <b><u>Les services définis ici comprennent :</u></b>  </p>
+
+                                        <p> <b>Laravel</b> : Cette définition de service contient l'application Laravel et exécute une image Docker personnalisée, <b>php:8.1-rc-fpm-alpine</b>, qui se trouve dans le fichier Dockerfile. Elle définit également le working_dir dans le conteneur sur /var/www.</p>
+                                       
+                                        <p><b>Nginx</b> : cette définition de service extrait l'image <b>nginx:stable-alpine</b> de Docker et expose les ports 80 et 443.</p> 
+
+                                        <p><b>Postgres</b> : cette définition de service extrait l'image <b>postgres:8</b> de Docker et définit quelques variables d'environnement, notamment une base de données appelée postgres (Par default) pour votre application et le mot de passe root pour la base de données. Vous êtes libre de nommer la base de données comme vous le souhaitez et vous devez remplacer <b>${DB_PASSWORD}</b> par votre propre mot de passe fort ou alors vous la laissez par default (postgres). Cette définition de service mappe également le port 5433 sur l'hôte au port 5432 sur le conteneur.</p>
+
+
+                                        <p>Chaque  "container_name" définit un nom pour le conteneur, qui correspond au nom du service. Si vous ne définissez pas cette propriété, Docker attribuera un nom à chaque conteneur en combinant le nom d'une personne historiquement célèbre et un mot aléatoire séparé par un trait de soulignement.</p>
+
+                                        <p>Pour faciliter la communication entre les conteneurs, les services sont connectés à un réseau <b>'networks'</b> appelé <b>webapp</b></p>
+                                    </div><!--//code-block-->
+
+
+                                </div><!--//section-block-->
+
+
+                                <div id="nginx" class="section-block">
+                                    <div class="code-block">
+                                        
+                                         <p><b>Dans le répértoire \nginx\nginx.conf, créez un fichier nommé nginx.conf et ajoutez ces lignes : </b> 
+                                    </p>
+
+                                   <pre> <code class="language-php">
+     server {
+        listen 80;
+        index index.php index.html;
+        server_name localhost;
+        error_log /var/log/nginx/error.log;
+        access_log /var/log/nginx/access.log;
+        root /var/www/html/public;
+
+      client_max_body_size 100M;
+      fastcgi_read_timeout 1800;
+
+      location / {
+        try_files $uri $uri/ /index.php?$query_string;
+      }
+
+      location ~ \.php$ {
+        try_files     $uri =404;
+        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+        fastcgi_pass  php:9000;
+        fastcgi_index index.php;
+        include       fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+      }
+    }
+                                    </code></pre>
+
+
+                                    <p>Le bloc <a href="https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms">server</a>  définit la configuration du serveur Web Nginx avec les directives suivantes:</p>
+
+                                    <p> <b>listen</b> : cette directive définit le port sur lequel le serveur écoutera les requêtes entrantes.</p>
+                                    <p> <b>error_log</b> et <b>access_log</b> : Ces directives définissent les fichiers d'écriture des logs (journaux).</p>
+                                    <p><b>root</b> : Cette directive définit le chemin du dossier racine, formant le chemin complet vers tout fichier demandé sur le système de fichiers local</p>
+
+                                    <p>- Dans le bloc d'emplacement <b>php</b>, la directive <b>fastcgi_pass</b> spécifie que le service <b>app</b> écoute sur un socket TCP sur le port <b>9000</b>. Cela permet au serveur PHP-FPM d'écouter sur le réseau plutôt que sur un socket Unix. Bien qu'un socket Unix ait un léger avantage en termes de vitesse par rapport à un socket TCP, il n'a pas de protocole réseau et saute donc la pile réseau. Dans les cas où les hôtes sont situés sur une machine, un socket Unix peut avoir du sens, mais dans les cas où vous avez des services exécutés sur différents hôtes, un socket TCP offre l'avantage de vous permettre de vous connecter à des services distribués. Étant donné que votre conteneur d'application s'exécute sur un hôte différent de votre conteneur de serveur Web, un socket TCP est le plus logique pour votre configuration.</p>
+
+                                    <p>Enregistrez le fichier et quittez votre éditeur lorsque vous avez terminé d'apporter des modifications.</p>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+                                <div id="php" class="section-block">
+                                    <div class="code-block">
+                                        <h6>PHP</h6>
+                                        <p><b> - Après la configuration de Nginx, on passe vers PHP et donc il faudra créer un fichier nommé "Dockerfile" (Case sensible) dans le dossier de votre projet Laravel: </b> 
+                                        <pre><code class="language-php">
+	FROM php:8.1-rc-fpm-alpine
+
+	RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+	RUN set -ex \
+			&& apk --no-cache add postgresql-dev \
+			&& docker-php-ext-install pdo pdo_pgsql
+
+	WORKDIR /var/www/html                                            
+                                        </code></pre>
+
+
+
+                                    <p>- Tout d'abord, le Dockerfile crée une image au-dessus de l'image Docker <b> php:8.1-rc-fpm-alpine</b>. Il s'agit d'une image basée sur Debian sur laquelle l'implémentation PHP FastCGI PHP-FPM est installée. Le fichier installe également les packages prérequis pour Laravel: mcrypt, pdo_mysql, mbstring et imagick avec composer.</p>
+
+                                    <p>RUN spécifie les commandes pour mettre à jour, installer et configurer les paramètres à l'intérieur du conteneur. L'instruction <b>WORKDIR</b> spécifie le répertoire <b>/var/www</b> comme répertoire de travail pour l'application.</p>
+
+                                    <p>Enregistrez le fichier et quittez votre éditeur lorsque vous avez terminé d'apporter des modifications.</p>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="pgsql" class="section-block">
+                                    <div class="code-block">
+                                        <h6>PostgreSQL</h6>
+                                        <p>Modifiez .env (qui se trouve dans votre dossier de projet Laravel) pour établir la connexion a la base de donnée PostgreSQL, Les paramètres de<code> ${DB_PASSWORD}</code> et <code>${DB_DATABASE} </code> sont 'postgres' par default :</p>
+
+                                        <pre><code class="language-php">
+    DB_CONNECTION=pgsql
+    DB_HOST=postgres
+    DB_PORT=5432
+    DB_DATABASE=postgres
+    DB_USERNAME=root
+    DB_PASSWORD=
+
+                                        </code></pre>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                                <div id="execdocker" class="section-block">
+                                    <div class="code-block">
+                                        <h6>Build Docker</h6>
+                                        <p>Enregistrez vos modifications et quittez votre éditeur.
+                                            Avec tous vos services définis dans votre fichier <b>docker-compose.yml</b> , utilisez la commande unique suivante pour démarrer tous les conteneurs, créer les volumes, configurer et connecter les réseaux:</p>
+                                        <p><code>docker-compose up -d</code></p></p>
+
+                                        <p>Lorsque vous exécutez <b>docker-compose</b> pour la première fois, il télécharge toutes les images Docker nécessaires, ce qui peut prendre un certain temps. Une fois les images téléchargées et stockées sur votre machine locale, Compose créera vos conteneurs.</p>
+                                        <p>L'indicateur -d démonise le processus en exécutant vos conteneurs en arrière-plan.</p>
+
+                                        <p>Une fois le processus terminé, utilisez la commande suivante pour répertorier tous les conteneurs en cours d'exécution:</p>
+                                        <p><code>docker ps</code></p>
+
+                                        <p>Vous verrez la sortie suivante avec des détails sur votre application, votre serveur Web et vos conteneurs de base de données:</p>
+                                        <pre><code class="language-php">CONTAINER ID   IMAGE                 COMMAND                  CREATED              STATUS              PORTS                    NAMES
+ef8db04a6b19   nginx:stable-alpine   "/docker-entrypoint.…"   About a minute ago   Up About a minute   0.0.0.0:8000->80/tcp     Laravel_nginx
+807f69968f1d   test_php              "docker-php-entrypoi…"   About a minute ago   Up About a minute   0.0.0.0:9001->9000/tcp   Laravel_php
+71c04de94119   postgres:8            "/docker-entrypoint.…"   2 minutes ago        Up About a minute   0.0.0.0:5433->5432/tcp   Laravel_postgres</code></pre>
+
+
+
+                                    <p>- L'<b>ID CONTAINER</b> dans cette sortie est un identifiant unique pour chaque conteneur, tandis que <b>NAMES</b> répertorie le nom du service associé à chacun. Vous pouvez utiliser ces deux identifiants pour accéder aux conteneurs. <b>IMAGE</b> définit le nom de l'image pour chaque conteneur, tandis que <b>STATUS</b> fournit des informations sur l'état du conteneur: s'il est en cours d'<a style="color: darkgreen;"><b>exécution</b></a>, en cours de <a style="color: darkorange;"><b>redémarrage</b></a> ou <a style="color: darkred;"><b>arrêté</b></a>.</p>
+
+
+                                    <p>Vous allez maintenant utiliser <code>docker exec</code> pour définir la clé d'application de l'application Laravel. La commande docker exec vous permet d'exécuter des commandes spécifiques dans des conteneurs.</p>
+
+                                    <p><code>docker exec -it &lt;NomDuContainer&gt /bin/sh</code> par exemple : <code>docker exec -it Laravel_php /bin/sh</code> puisque le nom que j'ai attribué au conteneur de php est <b>Laravel_php</b></p>
+
+                                    <p>Vous serez dans un intrepreteur de commande de SH, la commande suivante générera une clé et la copiera dans votre fichier .env, en veillant à ce que vos sessions utilisateur et vos données chiffrées restent sécurisées :</p>
+                                    <p><code>php artisan key:generate</code></p>
+
+                                    <p>Vous disposez maintenant des paramètres d'environnement requis pour exécuter votre application. Pour mettre en cache ces paramètres dans un fichier, ce qui augmentera la vitesse de chargement de votre application, exécutez:</p>
+
+                                    <p><code>php artisan config:cache</code></p>
+
+                                    <p>Vos paramètres de configuration seront chargés dans <b>/var/www/bootstrap/cache/config.php</b> sur le conteneur.</p>
+
+                                    <p>Enfin, visitez <a href="http://localhost:8000">Localhost</a><b></b> dans le navigateur. Vous verrez la page d'accueil pour votre application Laravel</p>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="Github" class="doc-section">
+                                <h2 class="section-title">Github Actions</h2>
+
+                            </section>
+
+
+                        </div>
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+		                            <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#dll-php-composer">Téléchargement</a>
+		                            </li>
+		                            <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#installation-section">Laravel</a>
+		                            </li>
+                                    <nav class="nav doc-sub-menu nav flex-column">
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#step1">Lancement du serveur</a>
+	                                    </li>
+                                    </nav><!--//nav-->
+                                    <li class="nav-item">
+	                                    <a class="nav-link scrollto" href="#docker">Docker</a>
+                                    </li>
+                                    
+                                    <nav class="nav doc-sub-menu nav flex-column">
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#docker-dll">Installation Docker</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#docker-compose">Configuration docker-compose</a>
+	                                    </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link scrollto" href="#nginx">Configuration Nginx</a>
+                                        </li>
+
+	                                    <li class="nav-item">
+                                             <a class="nav-link scrollto" href="#php">Configuration PHP</a>
+	                                    </li>
+	                                    <li class="nav-item">
+                                             <a class="nav-link scrollto" href="#pgsql">Configuration PostgreSQL</a>
+                                        </li>
+                                        <li class="nav-item">
+                                             <a class="nav-link scrollto" href="#execdocker">Execution de Docker</a>
+                                        </li>
+                                    </nav><!--//nav-->
+                                    <li class="nav-item">
+	                                     <a class="nav-link scrollto" href="#Github">Github Actions</a>
+                                    </li>
+	                            </nav>
+	                        
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        
+        <div id="promo-block" class="promo-block">
+        </div>
+        
+    </div>
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            
+        </div>
+    </footer>
+    
+     
+    <!-- Main Javascript -->          
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/prism/prism.js"></script>      
+    <script src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>                                                          
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+
